@@ -5,10 +5,12 @@ let boton = document.getElementById('boton')
 function entrar () {
     if (password.value === '123') {
         alert('Bienvenido a PGIRHS')
-        window.location.href = 'file:///C:/Users/Devel/Desktop/Desarrollo/proyecto%202/index2.html'
+        window.location.href = 'https://carlosdevops2530.github.io/PGIRHS/'
     } else {
         alert('contraseña incorrecta')
         return false
     }
+
+    console.log(window.location)
 }
 boton.addEventListener('click', entrar)
